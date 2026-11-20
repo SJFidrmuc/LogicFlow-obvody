@@ -1,0 +1,5 @@
+# Údaje pro knihovnu obvodů (název, autor, popis a licence jsou v obvod.logicflow → "info")
+kategorie = "sekvencni"
+obtiznost = 2        # 1 začátečník, 2 středně pokročilý, 3 pokročilý
+stitky = ["čítač", "klopný obvod", "T", "asynchronní"]
+zdroj = "Vestavěný příklad programu LogicFlow 0.3"

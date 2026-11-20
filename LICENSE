@@ -1,0 +1,20 @@
+Knihovna obvodů LogicFlow – licence
+
+Obvody v tomto repozitáři (složka obvody/: soubory .logicflow, info.toml,
+zadani.md a obrázky) jsou licencovány pod licencí
+
+    Creative Commons Uveďte původ 4.0 Mezinárodní (CC BY 4.0)
+    Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Smíte je kopírovat, šířit a upravovat k jakémukoli účelu, i komerčnímu,
+pokud uvedete autora (jméno je u každého obvodu v souboru obvod.logicflow
+v části "info" a v KATALOG.md), odkaz na licenci a vyznačíte případné změny.
+
+Shrnutí licence:   https://creativecommons.org/licenses/by/4.0/deed.cs
+Úplné znění:       https://creativecommons.org/licenses/by/4.0/legalcode
+
+Autorská práva k jednotlivým obvodům mají jejich autoři uvedení v souboru
+obvodu. Knihovnu spravuje Stanislav Jan Fidrmuc.
+
+Nástroje ve složce nastroje/ (kontrola a katalog) jsou pod licencí MIT,
+stejně jako program LogicFlow (https://github.com/SJFidrmuc/LogicFlow).

@@ -1,0 +1,5 @@
+# Údaje pro knihovnu obvodů (název, autor, popis a licence jsou v obvod.logicflow → "info")
+kategorie = "kombinacni"
+obtiznost = 1        # 1 začátečník, 2 středně pokročilý, 3 pokročilý
+stitky = ["hradla", "pravdivostní tabulka"]
+zdroj = "Vestavěný příklad programu LogicFlow 0.3"

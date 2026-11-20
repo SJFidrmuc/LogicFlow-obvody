@@ -1,0 +1,35 @@
+# Kontrola knihovny: každý obvod se načte simulačním jádrem LogicFlow,
+# ověří se název, autor, popis, licence CC BY 4.0 a údaje v info.toml
+# a zkontroluje se, že KATALOG.md odpovídá obsahu knihovny.
+name: Kontrola obvodů
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  kontrola:
+    name: Kontrola obvodů a katalogu
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: nastroje/kontrola
+      - name: Kontrola a katalog
+        run: cargo run --locked --manifest-path nastroje/kontrola/Cargo.toml -- katalog
+      - name: KATALOG.md je aktuální
+        run: |
+          if ! git diff --exit-code -- KATALOG.md; then
+            echo "::error::KATALOG.md neodpovídá obvodům. Spusťte: cargo run --manifest-path nastroje/kontrola/Cargo.toml -- katalog"
+            exit 1
+          fi

@@ -1,0 +1,326 @@
+{
+  "format": 1,
+  "app": "LogicFlow 0.3.0",
+  "info": {
+    "title": "Čítač 0–7 z klopných obvodů T",
+    "authors": [
+      "Stanislav Jan Fidrmuc"
+    ],
+    "description": "Asynchronní tříbitový čítač nahoru: každý stupeň je řízený výstupem Q̄ předchozího klopného obvodu T.",
+    "license": "CC BY 4.0",
+    "created": "2026-11-20",
+    "app_version": "0.3.0"
+  },
+  "circuit": {
+    "components": [
+      {
+        "id": 0,
+        "kind": {
+          "type": "clock",
+          "period_ms": 500
+        },
+        "pos": {
+          "x": 0,
+          "y": 5
+        },
+        "rotation": "R0",
+        "label": "CLK"
+      },
+      {
+        "id": 1,
+        "kind": {
+          "type": "constant",
+          "value": true
+        },
+        "pos": {
+          "x": 0,
+          "y": -5
+        },
+        "rotation": "R0",
+        "label": "K1"
+      },
+      {
+        "id": 2,
+        "kind": {
+          "type": "flip_flop",
+          "ff": "t",
+          "falling": false,
+          "initial": false
+        },
+        "pos": {
+          "x": 12,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "KO1"
+      },
+      {
+        "id": 3,
+        "kind": {
+          "type": "flip_flop",
+          "ff": "t",
+          "falling": false,
+          "initial": false
+        },
+        "pos": {
+          "x": 24,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "KO2"
+      },
+      {
+        "id": 4,
+        "kind": {
+          "type": "flip_flop",
+          "ff": "t",
+          "falling": false,
+          "initial": false
+        },
+        "pos": {
+          "x": 36,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "KO3"
+      },
+      {
+        "id": 19,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 16,
+          "y": -12
+        },
+        "rotation": "R270",
+        "label": "Q0"
+      },
+      {
+        "id": 22,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 28,
+          "y": -12
+        },
+        "rotation": "R270",
+        "label": "Q1"
+      },
+      {
+        "id": 25,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 40,
+          "y": -12
+        },
+        "rotation": "R270",
+        "label": "Q2"
+      }
+    ],
+    "wires": [
+      {
+        "id": 5,
+        "a": {
+          "x": 3,
+          "y": 5
+        },
+        "b": {
+          "x": 6,
+          "y": 5
+        }
+      },
+      {
+        "id": 6,
+        "a": {
+          "x": 6,
+          "y": 5
+        },
+        "b": {
+          "x": 6,
+          "y": 1
+        }
+      },
+      {
+        "id": 7,
+        "a": {
+          "x": 6,
+          "y": 1
+        },
+        "b": {
+          "x": 9,
+          "y": 1
+        }
+      },
+      {
+        "id": 8,
+        "a": {
+          "x": 2,
+          "y": -5
+        },
+        "b": {
+          "x": 31,
+          "y": -5
+        }
+      },
+      {
+        "id": 9,
+        "a": {
+          "x": 7,
+          "y": -5
+        },
+        "b": {
+          "x": 7,
+          "y": -1
+        }
+      },
+      {
+        "id": 10,
+        "a": {
+          "x": 7,
+          "y": -1
+        },
+        "b": {
+          "x": 9,
+          "y": -1
+        }
+      },
+      {
+        "id": 11,
+        "a": {
+          "x": 19,
+          "y": -5
+        },
+        "b": {
+          "x": 19,
+          "y": -1
+        }
+      },
+      {
+        "id": 12,
+        "a": {
+          "x": 19,
+          "y": -1
+        },
+        "b": {
+          "x": 21,
+          "y": -1
+        }
+      },
+      {
+        "id": 13,
+        "a": {
+          "x": 31,
+          "y": -5
+        },
+        "b": {
+          "x": 31,
+          "y": -1
+        }
+      },
+      {
+        "id": 14,
+        "a": {
+          "x": 31,
+          "y": -1
+        },
+        "b": {
+          "x": 33,
+          "y": -1
+        }
+      },
+      {
+        "id": 15,
+        "a": {
+          "x": 15,
+          "y": 1
+        },
+        "b": {
+          "x": 21,
+          "y": 1
+        }
+      },
+      {
+        "id": 16,
+        "a": {
+          "x": 27,
+          "y": 1
+        },
+        "b": {
+          "x": 33,
+          "y": 1
+        }
+      },
+      {
+        "id": 17,
+        "a": {
+          "x": 15,
+          "y": -1
+        },
+        "b": {
+          "x": 16,
+          "y": -1
+        }
+      },
+      {
+        "id": 18,
+        "a": {
+          "x": 16,
+          "y": -1
+        },
+        "b": {
+          "x": 16,
+          "y": -10
+        }
+      },
+      {
+        "id": 20,
+        "a": {
+          "x": 27,
+          "y": -1
+        },
+        "b": {
+          "x": 28,
+          "y": -1
+        }
+      },
+      {
+        "id": 21,
+        "a": {
+          "x": 28,
+          "y": -1
+        },
+        "b": {
+          "x": 28,
+          "y": -10
+        }
+      },
+      {
+        "id": 23,
+        "a": {
+          "x": 39,
+          "y": -1
+        },
+        "b": {
+          "x": 40,
+          "y": -1
+        }
+      },
+      {
+        "id": 24,
+        "a": {
+          "x": 40,
+          "y": -1
+        },
+        "b": {
+          "x": 40,
+          "y": -10
+        }
+      }
+    ],
+    "next_id": 26
+  }
+}

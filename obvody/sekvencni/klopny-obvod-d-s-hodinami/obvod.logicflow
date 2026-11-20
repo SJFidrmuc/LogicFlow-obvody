@@ -1,0 +1,174 @@
+{
+  "format": 1,
+  "app": "LogicFlow 0.3.0",
+  "info": {
+    "title": "Klopný obvod D s hodinami",
+    "authors": [
+      "Stanislav Jan Fidrmuc"
+    ],
+    "description": "Klopný obvod D řízený hranou hodin: při náběžné hraně uloží hodnotu vstupu D. Sledujte časový diagram.",
+    "license": "CC BY 4.0",
+    "created": "2026-11-20",
+    "app_version": "0.3.0"
+  },
+  "circuit": {
+    "components": [
+      {
+        "id": 0,
+        "kind": {
+          "type": "switch",
+          "on": true
+        },
+        "pos": {
+          "x": 0,
+          "y": -1
+        },
+        "rotation": "R0",
+        "label": "D"
+      },
+      {
+        "id": 1,
+        "kind": {
+          "type": "clock",
+          "period_ms": 2000
+        },
+        "pos": {
+          "x": 0,
+          "y": 5
+        },
+        "rotation": "R0",
+        "label": "CLK"
+      },
+      {
+        "id": 2,
+        "kind": {
+          "type": "flip_flop",
+          "ff": "d",
+          "falling": false,
+          "initial": false
+        },
+        "pos": {
+          "x": 12,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "KO1"
+      },
+      {
+        "id": 3,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 20,
+          "y": -1
+        },
+        "rotation": "R0",
+        "label": "Q"
+      },
+      {
+        "id": 4,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 20,
+          "y": 3
+        },
+        "rotation": "R0",
+        "label": "Qn"
+      }
+    ],
+    "wires": [
+      {
+        "id": 5,
+        "a": {
+          "x": 2,
+          "y": -1
+        },
+        "b": {
+          "x": 9,
+          "y": -1
+        }
+      },
+      {
+        "id": 6,
+        "a": {
+          "x": 3,
+          "y": 5
+        },
+        "b": {
+          "x": 6,
+          "y": 5
+        }
+      },
+      {
+        "id": 7,
+        "a": {
+          "x": 6,
+          "y": 5
+        },
+        "b": {
+          "x": 6,
+          "y": 1
+        }
+      },
+      {
+        "id": 8,
+        "a": {
+          "x": 6,
+          "y": 1
+        },
+        "b": {
+          "x": 9,
+          "y": 1
+        }
+      },
+      {
+        "id": 9,
+        "a": {
+          "x": 15,
+          "y": -1
+        },
+        "b": {
+          "x": 18,
+          "y": -1
+        }
+      },
+      {
+        "id": 10,
+        "a": {
+          "x": 15,
+          "y": 1
+        },
+        "b": {
+          "x": 16,
+          "y": 1
+        }
+      },
+      {
+        "id": 11,
+        "a": {
+          "x": 16,
+          "y": 1
+        },
+        "b": {
+          "x": 16,
+          "y": 3
+        }
+      },
+      {
+        "id": 12,
+        "a": {
+          "x": 16,
+          "y": 3
+        },
+        "b": {
+          "x": 18,
+          "y": 3
+        }
+      }
+    ],
+    "next_id": 13
+  }
+}

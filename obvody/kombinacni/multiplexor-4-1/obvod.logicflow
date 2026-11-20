@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "app": "LogicFlow 0.3.0",
+  "info": {
+    "title": "Multiplexor 4:1",
+    "authors": [
+      "Stanislav Jan Fidrmuc"
+    ],
+    "description": "Funkční blok MUX: dvoubitová adresa S vybere jeden ze čtyř datových vstupů a pošle ho na výstup Y.",
+    "license": "CC BY 4.0",
+    "created": "2026-11-20",
+    "app_version": "0.3.0"
+  },
+  "circuit": {
+    "components": [
+      {
+        "id": 0,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": -5
+        },
+        "rotation": "R0",
+        "label": "S0"
+      },
+      {
+        "id": 2,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": -3
+        },
+        "rotation": "R0",
+        "label": "S1"
+      },
+      {
+        "id": 4,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": -1
+        },
+        "rotation": "R0",
+        "label": "D0"
+      },
+      {
+        "id": 6,
+        "kind": {
+          "type": "switch",
+          "on": true
+        },
+        "pos": {
+          "x": 0,
+          "y": 1
+        },
+        "rotation": "R0",
+        "label": "D1"
+      },
+      {
+        "id": 8,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": 3
+        },
+        "rotation": "R0",
+        "label": "D2"
+      },
+      {
+        "id": 10,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": 5
+        },
+        "rotation": "R0",
+        "label": "D3"
+      },
+      {
+        "id": 12,
+        "kind": {
+          "type": "block",
+          "block": {
+            "kind": "mux",
+            "select": 2
+          }
+        },
+        "pos": {
+          "x": 14,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "IO1"
+      },
+      {
+        "id": 13,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 22,
+          "y": -5
+        },
+        "rotation": "R0",
+        "label": "Y"
+      }
+    ],
+    "wires": [
+      {
+        "id": 1,
+        "a": {
+          "x": 2,
+          "y": -5
+        },
+        "b": {
+          "x": 10,
+          "y": -5
+        }
+      },
+      {
+        "id": 3,
+        "a": {
+          "x": 2,
+          "y": -3
+        },
+        "b": {
+          "x": 10,
+          "y": -3
+        }
+      },
+      {
+        "id": 5,
+        "a": {
+          "x": 2,
+          "y": -1
+        },
+        "b": {
+          "x": 10,
+          "y": -1
+        }
+      },
+      {
+        "id": 7,
+        "a": {
+          "x": 2,
+          "y": 1
+        },
+        "b": {
+          "x": 10,
+          "y": 1
+        }
+      },
+      {
+        "id": 9,
+        "a": {
+          "x": 2,
+          "y": 3
+        },
+        "b": {
+          "x": 10,
+          "y": 3
+        }
+      },
+      {
+        "id": 11,
+        "a": {
+          "x": 2,
+          "y": 5
+        },
+        "b": {
+          "x": 10,
+          "y": 5
+        }
+      },
+      {
+        "id": 14,
+        "a": {
+          "x": 18,
+          "y": -5
+        },
+        "b": {
+          "x": 20,
+          "y": -5
+        }
+      }
+    ],
+    "next_id": 15
+  }
+}

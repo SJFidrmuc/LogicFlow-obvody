@@ -1,0 +1,461 @@
+{
+  "format": 1,
+  "app": "LogicFlow 0.3.0",
+  "info": {
+    "title": "Úplná sčítačka ze dvou podobvodů",
+    "authors": [
+      "Stanislav Jan Fidrmuc"
+    ],
+    "description": "Úplná sčítačka složená ze dvou polovičních sčítaček jako podobvodů a hradla OR pro výsledný přenos. Klávesou Tab otevřete podobvod.",
+    "license": "CC BY 4.0",
+    "created": "2026-11-20",
+    "app_version": "0.3.0"
+  },
+  "circuit": {
+    "components": [
+      {
+        "id": 0,
+        "kind": {
+          "type": "switch",
+          "on": true
+        },
+        "pos": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "A"
+      },
+      {
+        "id": 1,
+        "kind": {
+          "type": "switch",
+          "on": true
+        },
+        "pos": {
+          "x": 0,
+          "y": 2
+        },
+        "rotation": "R0",
+        "label": "B"
+      },
+      {
+        "id": 2,
+        "kind": {
+          "type": "switch",
+          "on": false
+        },
+        "pos": {
+          "x": 0,
+          "y": 6
+        },
+        "rotation": "R0",
+        "label": "CI"
+      },
+      {
+        "id": 3,
+        "kind": {
+          "type": "subcircuit",
+          "id": 1,
+          "inputs": 2,
+          "outputs": 2
+        },
+        "pos": {
+          "x": 14,
+          "y": 0
+        },
+        "rotation": "R0",
+        "label": "P1"
+      },
+      {
+        "id": 4,
+        "kind": {
+          "type": "subcircuit",
+          "id": 1,
+          "inputs": 2,
+          "outputs": 2
+        },
+        "pos": {
+          "x": 28,
+          "y": 2
+        },
+        "rotation": "R0",
+        "label": "P2"
+      },
+      {
+        "id": 5,
+        "kind": {
+          "type": "gate",
+          "gate": "Or",
+          "inputs": 2
+        },
+        "pos": {
+          "x": 40,
+          "y": -5
+        },
+        "rotation": "R0",
+        "label": ""
+      },
+      {
+        "id": 18,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 36,
+          "y": 4
+        },
+        "rotation": "R0",
+        "label": "S"
+      },
+      {
+        "id": 20,
+        "kind": {
+          "type": "led"
+        },
+        "pos": {
+          "x": 47,
+          "y": -5
+        },
+        "rotation": "R0",
+        "label": "CO"
+      }
+    ],
+    "wires": [
+      {
+        "id": 6,
+        "a": {
+          "x": 2,
+          "y": 0
+        },
+        "b": {
+          "x": 10,
+          "y": 0
+        }
+      },
+      {
+        "id": 7,
+        "a": {
+          "x": 2,
+          "y": 2
+        },
+        "b": {
+          "x": 10,
+          "y": 2
+        }
+      },
+      {
+        "id": 8,
+        "a": {
+          "x": 2,
+          "y": 6
+        },
+        "b": {
+          "x": 22,
+          "y": 6
+        }
+      },
+      {
+        "id": 9,
+        "a": {
+          "x": 22,
+          "y": 6
+        },
+        "b": {
+          "x": 22,
+          "y": 4
+        }
+      },
+      {
+        "id": 10,
+        "a": {
+          "x": 22,
+          "y": 4
+        },
+        "b": {
+          "x": 24,
+          "y": 4
+        }
+      },
+      {
+        "id": 11,
+        "a": {
+          "x": 18,
+          "y": 2
+        },
+        "b": {
+          "x": 24,
+          "y": 2
+        }
+      },
+      {
+        "id": 12,
+        "a": {
+          "x": 18,
+          "y": 0
+        },
+        "b": {
+          "x": 20,
+          "y": 0
+        }
+      },
+      {
+        "id": 13,
+        "a": {
+          "x": 20,
+          "y": 0
+        },
+        "b": {
+          "x": 20,
+          "y": -6
+        }
+      },
+      {
+        "id": 14,
+        "a": {
+          "x": 20,
+          "y": -6
+        },
+        "b": {
+          "x": 37,
+          "y": -6
+        }
+      },
+      {
+        "id": 15,
+        "a": {
+          "x": 32,
+          "y": 2
+        },
+        "b": {
+          "x": 34,
+          "y": 2
+        }
+      },
+      {
+        "id": 16,
+        "a": {
+          "x": 34,
+          "y": 2
+        },
+        "b": {
+          "x": 34,
+          "y": -4
+        }
+      },
+      {
+        "id": 17,
+        "a": {
+          "x": 34,
+          "y": -4
+        },
+        "b": {
+          "x": 37,
+          "y": -4
+        }
+      },
+      {
+        "id": 19,
+        "a": {
+          "x": 32,
+          "y": 4
+        },
+        "b": {
+          "x": 34,
+          "y": 4
+        }
+      },
+      {
+        "id": 21,
+        "a": {
+          "x": 43,
+          "y": -5
+        },
+        "b": {
+          "x": 45,
+          "y": -5
+        }
+      }
+    ],
+    "next_id": 22
+  },
+  "subcircuits": [
+    {
+      "id": 1,
+      "name": "Poloviční sčítačka",
+      "circuit": {
+        "components": [
+          {
+            "id": 0,
+            "kind": {
+              "type": "switch",
+              "on": true
+            },
+            "pos": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": "R0",
+            "label": "A"
+          },
+          {
+            "id": 1,
+            "kind": {
+              "type": "switch",
+              "on": false
+            },
+            "pos": {
+              "x": 0,
+              "y": 10
+            },
+            "rotation": "R0",
+            "label": "B"
+          },
+          {
+            "id": 2,
+            "kind": {
+              "type": "gate",
+              "gate": "Xor",
+              "inputs": 2
+            },
+            "pos": {
+              "x": 14,
+              "y": 1
+            },
+            "rotation": "R0",
+            "label": ""
+          },
+          {
+            "id": 3,
+            "kind": {
+              "type": "gate",
+              "gate": "And",
+              "inputs": 2
+            },
+            "pos": {
+              "x": 14,
+              "y": 9
+            },
+            "rotation": "R0",
+            "label": ""
+          },
+          {
+            "id": 4,
+            "kind": {
+              "type": "led"
+            },
+            "pos": {
+              "x": 22,
+              "y": 1
+            },
+            "rotation": "R0",
+            "label": "S"
+          },
+          {
+            "id": 5,
+            "kind": {
+              "type": "led"
+            },
+            "pos": {
+              "x": 22,
+              "y": 9
+            },
+            "rotation": "R0",
+            "label": "C"
+          }
+        ],
+        "wires": [
+          {
+            "id": 6,
+            "a": {
+              "x": 2,
+              "y": 0
+            },
+            "b": {
+              "x": 11,
+              "y": 0
+            }
+          },
+          {
+            "id": 7,
+            "a": {
+              "x": 6,
+              "y": 0
+            },
+            "b": {
+              "x": 6,
+              "y": 8
+            }
+          },
+          {
+            "id": 8,
+            "a": {
+              "x": 6,
+              "y": 8
+            },
+            "b": {
+              "x": 11,
+              "y": 8
+            }
+          },
+          {
+            "id": 9,
+            "a": {
+              "x": 2,
+              "y": 10
+            },
+            "b": {
+              "x": 11,
+              "y": 10
+            }
+          },
+          {
+            "id": 10,
+            "a": {
+              "x": 8,
+              "y": 10
+            },
+            "b": {
+              "x": 8,
+              "y": 2
+            }
+          },
+          {
+            "id": 11,
+            "a": {
+              "x": 8,
+              "y": 2
+            },
+            "b": {
+              "x": 11,
+              "y": 2
+            }
+          },
+          {
+            "id": 12,
+            "a": {
+              "x": 17,
+              "y": 1
+            },
+            "b": {
+              "x": 20,
+              "y": 1
+            }
+          },
+          {
+            "id": 13,
+            "a": {
+              "x": 17,
+              "y": 9
+            },
+            "b": {
+              "x": 20,
+              "y": 9
+            }
+          }
+        ],
+        "next_id": 14
+      }
+    }
+  ]
+}
