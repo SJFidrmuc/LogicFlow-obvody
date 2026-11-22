@@ -4,7 +4,7 @@
   "info": {
     "title": "Klopný obvod D s hodinami",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Klopný obvod D řízený hranou hodin: při náběžné hraně uloží hodnotu vstupu D. Sledujte časový diagram.",
     "license": "CC BY 4.0",

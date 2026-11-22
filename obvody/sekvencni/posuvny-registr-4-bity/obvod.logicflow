@@ -4,7 +4,7 @@
   "info": {
     "title": "Posuvný registr 4 bity",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Čtyři klopné obvody D zapojené za sebou: s každou hranou hodin se data posunou o jeden bit.",
     "license": "CC BY 4.0",

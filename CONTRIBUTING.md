@@ -62,6 +62,6 @@ Na [www.logicflow-sim.cz](https://www.logicflow-sim.cz) na stránce **Knihovna o
 
 ## Pro správce
 
-- Každý pull request schvaluje správce uvedený v `.github/CODEOWNERS` (zatím Stanislav Jan Fidrmuc).
+- Každý pull request schvaluje správce uvedený v `.github/CODEOWNERS` (zatím Mgr. Stanislav Jan Fidrmuc).
 - Příspěvek z formuláře: stáhnout soubor z Disku, doplnit `info` podle formuláře, vytvořit `info.toml`, spustit kontrolu s `katalog`, odeslat (vlastní commit nebo pull request).
 - Před sloučením obvod otevřít v programu a vyzkoušet, zkontrolovat popis a vhodnost obsahu a u žáků i formu jména.

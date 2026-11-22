@@ -4,7 +4,7 @@
   "info": {
     "title": "Multiplexor 4:1",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Funkční blok MUX: dvoubitová adresa S vybere jeden ze čtyř datových vstupů a pošle ho na výstup Y.",
     "license": "CC BY 4.0",

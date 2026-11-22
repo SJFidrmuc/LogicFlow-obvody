@@ -4,7 +4,7 @@
   "info": {
     "title": "Dekadický čítač se sedmisegmentovkou",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Čtyřbitový čítač nulovaný hradlem AND při stavu 10 (1010), převodník BCD na 7 segmentů a sedmisegmentovka. Takto vzniká čítač do libovolného čísla.",
     "license": "CC BY 4.0",
