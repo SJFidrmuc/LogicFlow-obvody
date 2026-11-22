@@ -4,7 +4,7 @@
   "info": {
     "title": "Klopný obvod RS z hradel NOR",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Paměťový obvod ze dvou zpětnovazebně propojených hradel NOR. Začíná ve stavu X, teprve nastavení S nebo nulování R určí stav.",
     "license": "CC BY 4.0",

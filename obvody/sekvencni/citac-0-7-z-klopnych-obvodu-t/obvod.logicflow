@@ -4,7 +4,7 @@
   "info": {
     "title": "Čítač 0–7 z klopných obvodů T",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Asynchronní tříbitový čítač nahoru: každý stupeň je řízený výstupem Q̄ předchozího klopného obvodu T.",
     "license": "CC BY 4.0",

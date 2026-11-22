@@ -4,7 +4,7 @@
   "info": {
     "title": "Poloviční sčítačka",
     "authors": [
-      "Stanislav Jan Fidrmuc"
+      "Mgr. Stanislav Jan Fidrmuc"
     ],
     "description": "Sečte dva jednobitové vstupy A a B: součet S z hradla XOR, přenos C z hradla AND.",
     "license": "CC BY 4.0",
